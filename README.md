@@ -21,6 +21,7 @@
 
 
 2. Fork and clone this repo.  When you need to commit use the following commands.
+	- NOTE: After forking, I made a submodule: `git submodule add https://github.com/mixelpixel/LS-Pro-React-II.git`
 
 	* Run: `npm install -g create-react-app`
 		* Done √
