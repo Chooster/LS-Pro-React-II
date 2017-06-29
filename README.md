@@ -23,9 +23,13 @@
 2. Fork and clone this repo.  When you need to commit use the following commands.
 
 	* Run: `npm install -g create-react-app`
+		* Done √
 	* Create a boilerplate React app called clock. `create-react-app clock`
+		*  Done √
 	* Navigate into /clock and run the command: `npm start`
+		*  Done √
 	* Your `<App />` component will render a `<NavBar />` and a `<Clock />` component.
+		*  Done √
 	* Create a file called `NavBar.js` and a file called `Clock.js`
 	* `<NavBar />` and `<Clock />` will both be React components.  `<NavBar />` should display the title of your page in a larger font.
 	* `<Clock />` will display a clock that updates every second.  (You will need to use the `Date` object.)
