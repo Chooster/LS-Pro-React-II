@@ -32,6 +32,7 @@
 	* Your `<App />` component will render a `<NavBar />` and a `<Clock />` component.
 		*  Done √
 	* Create a file called `NavBar.js` and a file called `Clock.js`
+		* Done √
 	* `<NavBar />` and `<Clock />` will both be React components.  `<NavBar />` should display the title of your page in a larger font.
 	* `<Clock />` will display a clock that updates every second.  (You will need to use the `Date` object.)
   	* `Date` example: `const now = new Date(); now.getHours(); now.getDay(); now.getMinutes(); now.getSeconds(); etc.`
