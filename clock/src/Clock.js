@@ -32,6 +32,7 @@
 // https://codepen.io/anuragasaurus/post/react-basics-making-a-clock
 // https://facebook.github.io/react/docs/state-and-lifecycle.html
 // https://facebook.github.io/react/docs/rendering-elements.html#react-only-updates-whats-necessary
+// https://www.npmjs.com/package/react-clockwall
 
 import React, { Component } from 'react';
 
