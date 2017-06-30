@@ -2,10 +2,20 @@ import React, { Component } from 'react';
 
 export default class Clock extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       clock: 0
-    }
+    };
+  }
+
+  componentWillMount() {
+    setInterval(() => {
+      this.setState((oldState) => {
+        return {
+          clock: oldState.clock + 1
+        };
+      });
+    }, 1000);
   }
 
   render() {
