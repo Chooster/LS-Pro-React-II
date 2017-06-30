@@ -9,6 +9,10 @@ export default class Clock extends Component {
   }
 
   componentWillMount() {
+    this.initializeInterval();
+  }
+
+  initializeInterval() {
     setInterval(() => {
       this.setState((oldState) => {
         return {
