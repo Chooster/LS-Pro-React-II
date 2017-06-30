@@ -36,9 +36,13 @@
 	* `<NavBar />` and `<Clock />` will both be React components.  `<NavBar />` should display the title of your page in a larger font.
 		* Done √
 	* `<Clock />` will display a clock that updates every second.  (You will need to use the `Date` object.)
+		* Done √
 	* `Date` example: `const now = new Date(); now.getHours(); now.getDay(); now.getMinutes(); now.getSeconds(); etc.`
+		* Done √
 	* Create a clock that updates every second. JavaScript's `setInterval(cb, miliseconds)` function allows you to specify code that runs after a set time.
+		* Done √
 	* Style `<Clock />` and try to make it look nice.
+		* Done √
 
 
 
