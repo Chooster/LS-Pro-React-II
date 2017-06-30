@@ -1,3 +1,23 @@
+import React, { Component } from 'react';
+
+export default class Clock extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      clock: 0
+    }
+  }
+
+  render() {
+    return (
+      <div>
+        { this.state.clock }
+      </div>
+    );
+  }
+}
+
+
 // import React, { Component } from 'react';
 //
 // export default class Clock extends Component {
@@ -34,38 +54,38 @@
 // https://facebook.github.io/react/docs/rendering-elements.html#react-only-updates-whats-necessary
 // https://www.npmjs.com/package/react-clockwall
 
-import React, { Component } from 'react';
-
-export default class Clock extends Component {
-    constructor(props) {
-        super(props);
-        this.timeTicker = this.timeTicker.bind(this);
-        this.state = {
-            now: new Date()
-        };
-    }
-
-    timeTicker() {
-        this.setState({
-            now: new Date()
-        })
-    }
-
-    componentDidMount() {
-        this.interval = setInterval(this.timeTicker, 1000);
-    }
-
-    componentWillUnmount() {
-        clearInterval(this.interval)
-    }
-
-    render() {
-        return(
-            <div>
-                <div>
-                    {this.state.now.toLocaleTimeString()}
-                </div>
-            </div>
-        );
-    };
-};
+// import React, { Component } from 'react';
+//
+// export default class Clock extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.timeTicker = this.timeTicker.bind(this);
+//         this.state = {
+//             now: new Date()
+//         };
+//     }
+//
+//     timeTicker() {
+//         this.setState({
+//             now: new Date()
+//         })
+//     }
+//
+//     componentDidMount() {
+//         this.interval = setInterval(this.timeTicker, 1000);
+//     }
+//
+//     componentWillUnmount() {
+//         clearInterval(this.interval)
+//     }
+//
+//     render() {
+//         return(
+//             <div>
+//                 <div>
+//                     {this.state.now.toLocaleTimeString()}
+//                 </div>
+//             </div>
+//         );
+//     };
+// };
