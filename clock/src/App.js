@@ -7,7 +7,7 @@ import Clock from './Clock';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className='App'>
         <NavBar />
         <Clock />
       </div>
