@@ -22,6 +22,7 @@ export default class Clock extends Component {
     }, 1000);
   }
 
+  // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleTimeString
   render() {
     return (
       <div>
