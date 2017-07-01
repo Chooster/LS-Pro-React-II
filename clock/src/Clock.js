@@ -4,7 +4,7 @@ export default class Clock extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clock: 0
+      clock: new Date()
     };
   }
 
@@ -16,7 +16,7 @@ export default class Clock extends Component {
     setInterval(() => {
       this.setState((oldState) => {
         return {
-          clock: oldState.clock + 1
+          clock: new Date()
         };
       });
     }, 1000);
@@ -25,13 +25,14 @@ export default class Clock extends Component {
   render() {
     return (
       <div>
-        { this.state.clock }
+        { this.state.clock.toLocaleTimeString() }
       </div>
     );
   }
 }
 
 
+// This is the version I started:
 // import React, { Component } from 'react';
 //
 // export default class Clock extends Component {
@@ -68,6 +69,7 @@ export default class Clock extends Component {
 // https://facebook.github.io/react/docs/rendering-elements.html#react-only-updates-whats-necessary
 // https://www.npmjs.com/package/react-clockwall
 
+// This is a version I found online:
 // import React, { Component } from 'react';
 //
 // export default class Clock extends Component {
